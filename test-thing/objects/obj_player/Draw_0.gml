@@ -1,0 +1,1 @@
+ev_draw_player();

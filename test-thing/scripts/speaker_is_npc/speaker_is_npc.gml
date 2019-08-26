@@ -1,0 +1,1 @@
+return (object_get_parent(speaker.object_index) == obj_npc)

@@ -1,0 +1,1 @@
+text = "North-West: Business District\nNorth: University District\nWest: Resturaunt District" 
