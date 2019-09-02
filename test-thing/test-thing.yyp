@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "1141b103-fbcb-43c9-9f92-574608585d76",
+            "Value": {
+                "id": "9ee5b288-8377-49a8-b991-c25966344c92",
+                "resourcePath": "sprites\/speech_bubble_blue\/speech_bubble_blue.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "13707f94-78d3-4b0b-8956-f28b5bbc116e",
             "Value": {
                 "id": "70c9f0e0-d203-4395-ba2b-fb8c2b5226bf",
@@ -575,14 +583,6 @@
             }
         },
         {
-            "Key": "6f59767e-c109-49fb-8d97-745613f68299",
-            "Value": {
-                "id": "06339ad0-8d8b-4266-a1f7-7d9f7231b6f8",
-                "resourcePath": "scripts\/draw_help_text\/draw_help_text.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "6fc162d7-ff09-4d80-95e8-507d0c437e8b",
             "Value": {
                 "id": "00b82aff-70e3-4d2d-8522-ddcdbfb509cc",
@@ -831,6 +831,14 @@
             }
         },
         {
+            "Key": "9efca91a-8b3a-4397-9772-ccd9749bd87e",
+            "Value": {
+                "id": "1763edad-e90d-4a14-8c43-cd5356e71db5",
+                "resourcePath": "sprites\/inventory_icon\/inventory_icon.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9ffaaaeb-ab48-43c5-ad4e-fd510a2cdc37",
             "Value": {
                 "id": "970b7c42-34f0-4aec-933a-0ca6534fc1df",
@@ -956,6 +964,14 @@
                 "id": "d01b8e95-9e42-4408-a7a5-0c1b7abda8e7",
                 "resourcePath": "objects\/obj_big_tree_1\/obj_big_tree_1.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b6e31dfb-7ed1-42b6-9c29-d34ad76ab236",
+            "Value": {
+                "id": "1ae3dd92-db79-42d5-be8f-5a7622e5fec8",
+                "resourcePath": "scripts\/speaker_can_take_item\/speaker_can_take_item.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1437,7 +1453,6 @@
         "739b2dcd-0633-491c-9da4-8b5c16d25c4b",
         "13707f94-78d3-4b0b-8956-f28b5bbc116e",
         "e70484cb-8144-4006-9c8c-f1a2c6ab7316",
-        "6f59767e-c109-49fb-8d97-745613f68299",
         "440b6582-6f37-4f4f-ae62-64bfdfbd40db",
         "bf3c4f5e-0e0c-4202-9ab1-dce6175b05b7",
         "f71501d8-194c-4725-9bb2-a1667eaa8190",
@@ -1472,7 +1487,8 @@
         "ac02fc0f-9ad6-49cb-b8f6-d541ec1e76dc",
         "8f6d919e-3e26-4462-8eca-f2debc715123",
         "fa79a09d-a505-4de9-886f-380a0bbf107a",
-        "fc2c1e72-d7c2-4f9f-95c2-f63b31031eea"
+        "fc2c1e72-d7c2-4f9f-95c2-f63b31031eea",
+        "b6e31dfb-7ed1-42b6-9c29-d34ad76ab236"
     ],
     "tutorial": ""
 }

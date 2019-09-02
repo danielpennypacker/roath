@@ -39,13 +39,13 @@ if(!show_inventory) {
 }
 
 // -- Toggle inventory menu
-if(keyboard_check_pressed(ord("2"))) {	
+if(keyboard_check_pressed(vk_shift)) {	
 	show_inventory = !show_inventory;
 	items_index = 0;
 }
 
 // -- Give item to an npc
-if(keyboard_check_pressed(ord("3"))) {
+if(keyboard_check_pressed(vk_enter)) {
 	if(speaker_is_npc()){
 		player_give_item_to_npc(speaker);	
 	}
@@ -62,6 +62,6 @@ if(keyboard_check_pressed(ord("3"))) {
 }
 
 // -- Handle Talking 
-if(speaker_is_npc() && keyboard_check_pressed(ord("1"))) {		
+if(speaker_is_npc() && keyboard_check_pressed(vk_space)) {		
 	player_speak_to_npc(speaker)
 }	

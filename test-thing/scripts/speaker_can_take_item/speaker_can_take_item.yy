@@ -1,8 +1,8 @@
 {
-    "id": "6f59767e-c109-49fb-8d97-745613f68299",
+    "id": "b6e31dfb-7ed1-42b6-9c29-d34ad76ab236",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "draw_help_text",
+    "name": "speaker_can_take_item",
     "IsCompatibility": false,
     "IsDnD": false
 }

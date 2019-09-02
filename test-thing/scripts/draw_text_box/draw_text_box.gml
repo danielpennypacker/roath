@@ -30,15 +30,15 @@ if (!speaker) {
 			// If npc has accetped an item, tell the player. Only shows the most recently given item
 			speech_desc = "Accepted " + pretty_item_name(speaker.current_speech_key) + " - " + speech_desc;
 		}			
-		current_title = speaker.role + " - " + speech_desc;			
+		current_title = speaker.role + " - " + speech_desc + " - Space to advance" ;			
 		current_text = speech_list[speaker.speech_index];
 	}		
 	if(speaker_is_sign()) {		
-		current_title = "Sign"
+		current_title = "Sign - Space to advance"
 		current_text = "\n"+ speaker.text;
 	}		
 	if(speaker_is_findable()) {		
-		current_title = "Item on ground"
+		current_title = "Item on ground - Enter to pickup."
 		current_text = "\n"+ speaker.text;
 	}		
 }
