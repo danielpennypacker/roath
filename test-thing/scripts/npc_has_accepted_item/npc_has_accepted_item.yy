@@ -1,8 +1,8 @@
 {
-    "id": "b6e31dfb-7ed1-42b6-9c29-d34ad76ab236",
+    "id": "43fc2a90-8a73-4a16-8aaf-85d7f8480a99",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "speaker_can_take_item",
+    "name": "npc_has_accepted_item",
     "IsCompatibility": false,
     "IsDnD": false
 }

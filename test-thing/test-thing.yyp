@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "16459be6-c968-49b4-b9c1-5b0ad81e9e6a",
+            "Value": {
+                "id": "e833152a-2367-4417-bcb0-89677603e083",
+                "resourcePath": "sprites\/speech_bubble_green\/speech_bubble_green.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "194eb9b1-65f0-43bd-a11e-6565b97d0402",
             "Value": {
                 "id": "00e275e2-c1c6-40dc-9282-95a4579b3d06",
@@ -356,6 +364,14 @@
                 "id": "26adeb5a-f7bb-438f-8241-34c0d68c430e",
                 "resourcePath": "fonts\/fnt_small\/fnt_small.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "43fc2a90-8a73-4a16-8aaf-85d7f8480a99",
+            "Value": {
+                "id": "3a114782-2aa8-4dd1-88c1-d6b204e16057",
+                "resourcePath": "scripts\/npc_has_accepted_item\/npc_has_accepted_item.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -970,7 +986,7 @@
             "Key": "b6e31dfb-7ed1-42b6-9c29-d34ad76ab236",
             "Value": {
                 "id": "1ae3dd92-db79-42d5-be8f-5a7622e5fec8",
-                "resourcePath": "scripts\/speaker_can_take_item\/speaker_can_take_item.yy",
+                "resourcePath": "scripts\/npc_can_take_item\/npc_can_take_item.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1468,6 +1484,8 @@
         "2879e000-e4be-47d0-a4b8-ffc998792d6b",
         "88edd64c-9f12-4518-94cc-c866403fc121",
         "705f17d1-1ec4-453d-aa1c-07e4cb0ea241",
+        "b6e31dfb-7ed1-42b6-9c29-d34ad76ab236",
+        "43fc2a90-8a73-4a16-8aaf-85d7f8480a99",
         "665a4945-9fab-40d9-bca5-9bd2c0393b86",
         "08dc4f2e-f5b7-4710-94c0-63dd6106eaf5",
         "1b910b2b-ff0f-4d5b-919b-ce0dc719e53d",
@@ -1487,8 +1505,7 @@
         "ac02fc0f-9ad6-49cb-b8f6-d541ec1e76dc",
         "8f6d919e-3e26-4462-8eca-f2debc715123",
         "fa79a09d-a505-4de9-886f-380a0bbf107a",
-        "fc2c1e72-d7c2-4f9f-95c2-f63b31031eea",
-        "b6e31dfb-7ed1-42b6-9c29-d34ad76ab236"
+        "fc2c1e72-d7c2-4f9f-95c2-f63b31031eea"
     ],
     "tutorial": ""
 }

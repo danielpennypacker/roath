@@ -1,8 +1,8 @@
 var base_width = 300;	
-var box_height = 350;
+var box_height = 645;
 var text_padding = 10;
 var line_height =  35;	
-var starting_x = 700;
+var starting_x = 660;
 var starting_y = 10;
 
 // background box of the inventory
@@ -14,8 +14,17 @@ draw_rectangle(
 	starting_y + box_height, 
 	false
 );		
+
+if(show_inventory) {
+	var default_color = c_black;
+} else {
+	var default_color = c_gray;
+}
+
+
 draw_set_font(fnt_small);
-draw_set_color(c_black);	
+
+draw_set_color(default_color);	
 		
 var inventory_text = "Inventory - Shift to toggle\n---------------";
 draw_text_ext(
@@ -38,8 +47,11 @@ for(var i = 0; i < items_size; i++) {
 	if(speaker and speaker_is_npc()) {							
 		if(ds_map_exists(speaker.speech_map, item)) {
 			draw_set_color(c_blue);	
+			if(items_index == i && show_inventory) {
+				line_text = line_text + " - Enter to give"
+			}			
 		} else {
-			draw_set_color(c_black);	
+			draw_set_color(default_color);	
 		}			
 	}			
 	draw_text_ext(

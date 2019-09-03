@@ -8,4 +8,5 @@ if(npc
 	npc.taken_items[? current_item] = true;
 	items_map[? current_item] = false;
 	npc.speech_index = 0;
+	show_inventory = false;
 }
