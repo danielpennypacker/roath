@@ -20,7 +20,7 @@ if (!speaker) {
 		current_text = items_descriptions[? current_item];
 	} else {
 		current_title = "Instructions"
-		current_text = "Use the arrow keys to move around. \nMove next to characters to talk to them"		
+		current_text = "Move next to characters to talk to them.\nArrow Keys: move around.\nSpace: advance text.\nShift: toggle inventory\nEnter: Give/Pickup items."		
 	}	
 	
 } else {	
