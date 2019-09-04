@@ -11,7 +11,6 @@ var no_item_taken = [
 self.speech_map[? BOAT_TICKET] = [
 "Thank you so much! No one's ever given me something like this, thank you so much!"
 , "I promise when I get there I'll try to get a job again, and more more cheap wine for me. Only the top shelf from now on!"
-, "Giving Spices: Here take these, it's some kind of spice, they fell off a cart yesterday and I uhm, kept them."
 ]
 self.speech_map[? GIVING_ITEM + BOAT_TICKET] = [
 "Here take these, it's some kind of spice, they fell off a cart yesterday and I uhm, kept them."
