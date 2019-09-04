@@ -1,6 +1,4 @@
-var thing = @"An old letter. It reads: 
-Sire, you suck!
-"
+var thing = "A torn letter lying on the ground."
 
 self.text = thing;
 self.item = OLD_NOTE

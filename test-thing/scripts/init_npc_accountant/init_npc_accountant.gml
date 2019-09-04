@@ -1,17 +1,8 @@
-// mary is a accountant
 self.role = "Accountant"
 
-var no_item_taken = [];
-no_item_taken[0] = @"
-I was born here, It's not that common, you know. I can't stay though. Once the 
-Osterogi get here everything they change, assuming they don't burn down the city.
-"
-no_item_taken[1] = @"
-I'll be fine wherever I got. I can run ship invetories and caculate risk. 
-My mother taught me so that I'd always be able to find work.
-"
-no_item_taken[2] = @"
-I hope Bosk declares war against the Osterog. Maybe then I can come back. 
-They'll need people who grew up here to rebuild. 
-"
+var no_item_taken = [
+"I was born here, as was my father and grandfather. I'd say less than a quarter of the people living here can make that claim. My parents always told me stories of powerful merchants coming and going, falling in and out of grace."
+, "I'm not that worried about the Osterogi coming. Once they get here, they'll see how good it is, and they won't want to change it. I'm very connected to the markets, and do you really think the Osterogi are dumb enough to scare off all the talent we've got here?"
+, "I was just talking to one of the local gangs about how we can work with them when they get here. If we want to keep any part of our culture, we'll have to adapt. Adapting is the culture of Roath! "
+];
 return no_item_taken
