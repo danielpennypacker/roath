@@ -64,6 +64,7 @@ OLD_NOTE = "Old_Note";
 items_map[? OLD_NOTE] = false;
 items_descriptions[? OLD_NOTE] = "An old note that reads: Dear Tristan, there's I know you'll never staywhen the Osterogi get here, but I will, and you can always come back to me."
 
+
 // -- The current selected item in the inventory
 globalvar items_index;
 items_index = 0;

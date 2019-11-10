@@ -45,7 +45,9 @@ for(var i = 0; i < items_size; i++) {
 	}		
 	// set the color if the speaker will take it. 
 	if(speaker and speaker_is_npc()) {							
-		if(ds_map_exists(speaker.speech_map, item)) {
+		if(ds_map_exists(speaker.speech_map, item) 
+			&& speaker.has_introduced
+		) {
 			draw_set_color(c_blue);	
 			if(items_index == i && show_inventory) {
 				line_text = line_text + " - Enter to give"

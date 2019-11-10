@@ -13,5 +13,6 @@ if(is_coliiding) {
 	speaker = false;	
 } else {
 	speaker = instance_nearest(x, y, obj_collidable);
+	speaker.has_encountered = true;
 }
 

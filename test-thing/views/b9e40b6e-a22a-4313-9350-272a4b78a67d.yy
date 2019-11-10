@@ -12,7 +12,8 @@
         "88edd64c-9f12-4518-94cc-c866403fc121",
         "705f17d1-1ec4-453d-aa1c-07e4cb0ea241",
         "b6e31dfb-7ed1-42b6-9c29-d34ad76ab236",
-        "43fc2a90-8a73-4a16-8aaf-85d7f8480a99"
+        "43fc2a90-8a73-4a16-8aaf-85d7f8480a99",
+        "b63a74fd-122b-492d-817c-64581a64c083"
     ],
     "filterType": "GMScript",
     "folderName": "npc",
