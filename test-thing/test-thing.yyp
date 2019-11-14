@@ -335,6 +335,14 @@
             }
         },
         {
+            "Key": "3c6ffaea-4a4e-428b-bad9-99a823337082",
+            "Value": {
+                "id": "9bba609f-0619-4521-851d-c57d05596a96",
+                "resourcePath": "sprites\/speech_bubble_gold\/speech_bubble_gold.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3d9f3ced-0bdf-4d49-8c4e-40cc54b25b5d",
             "Value": {
                 "id": "e86fdbd9-93bd-435a-9610-6342d107e1c0",
@@ -412,6 +420,14 @@
                 "id": "9ef3c002-b80a-410a-9df8-42cae4f44f85",
                 "resourcePath": "tilesets\/ts_path\/ts_path.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "4c5d7eb2-5a88-47e4-851b-1015f30aa5c8",
+            "Value": {
+                "id": "af7e3e55-337a-4513-9fc9-30c8b608f377",
+                "resourcePath": "sprites\/thought_bubble_blue_green\/thought_bubble_blue_green.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -851,6 +867,14 @@
             "Value": {
                 "id": "1ebcabc0-b779-44f9-9366-f6d369fbeb0f",
                 "resourcePath": "sprites\/spr_jester_right\/spr_jester_right.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9e132d99-589f-4457-bd13-25dfacb70b8b",
+            "Value": {
+                "id": "d4f60f79-f137-464b-9074-9f9f78ece3cf",
+                "resourcePath": "sprites\/speech_bubble_blue_green\/speech_bubble_blue_green.yy",
                 "resourceType": "GMSprite"
             }
         },

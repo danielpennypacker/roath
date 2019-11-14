@@ -10,7 +10,8 @@ self.speech_map[? GIVING_ITEM + NO_TAKEN_ITEM] = [
 "Giving History Book: Here, just take this and sell it somewhere else, anywhere else! I'm sure some uptight nobel in Bosk would love it. And... thank you."
 ];
 var no_item_taken = [
-"You're from where? Well anyways, don't worry, just listen and I'll give you a book. Men have died trying to steal these, but now these idiots just want bread and water for the journey out of here."
+"You're from where? Well anyways, don't worry, just listen and I'll give you a book." 
+, "Men have died trying to steal these, but now these idiots just want bread and water for the journey out of here."
 , "Really, what's one life for all this knowledge. I've dedicated my whole life to preserving these books, and I'm sure the Osterogs will burn anything that says they haven't owned Roath since the beginning of time."
 ];
 
