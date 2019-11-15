@@ -14,9 +14,6 @@ speaker = false;
 globalvar timer;
 timer = 0;
 
-globalvar show_inventory;
-show_inventory = false;
-
 // -- SPEECH KEYS
 globalvar NULL_ITEM;
 NULL_ITEM = "null_item";
@@ -36,7 +33,7 @@ items_descriptions = ds_map_create();
 
 globalvar BOAT_TICKET;
 BOAT_TICKET = "Boat_Ticket";
-items_map[? BOAT_TICKET] = false;
+items_map[? BOAT_TICKET] = true;
 items_descriptions[? BOAT_TICKET] = "A one way ticket from Roath to Bosk.";
 
 globalvar COINS;
@@ -46,7 +43,7 @@ items_descriptions[? COINS] = "All the money you brought with you. About a week'
 
 globalvar HISTORY_BOOK;
 HISTORY_BOOK = "History_Book";
-items_map[? HISTORY_BOOK] = false;
+items_map[? HISTORY_BOOK] = true;
 items_descriptions[? HISTORY_BOOK] = "An old history book, titled: The 17 Merchants of the first Convoy."
 
 globalvar SPICES;

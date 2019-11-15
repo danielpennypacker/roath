@@ -3,45 +3,32 @@ speed = 0;
 image_speed = 0;
 
 // -- Handle Arrow Keys
-if(!show_inventory) {
-	// ----- Move character
-	if(keyboard_check(vk_right)) {
-		direction = 0;
-	}
-	if(keyboard_check(vk_up)) {	
-		direction = 90;	
-	}
-	if(keyboard_check(vk_left)) {	
-		direction = 180;	
-	}
-	if(keyboard_check(vk_down)) {	
-		direction = 270;	
-	}	
-	if( keyboard_check(vk_right) || keyboard_check(vk_up) || keyboard_check(vk_left) || keyboard_check(vk_down)) {
-		speed = 1.5;
-		image_speed = 1;
-	}
-} else {
-	// ----- Move Inventory cursor	
-	var owned_items_size = array_length_1d(owned_items_array);	
-	if(keyboard_check_pressed(vk_up)) {	
-		items_index -= 1;
-		if(items_index < 0) {
-			items_index = owned_items_size -1;
-		}
-	}	
-	if(keyboard_check_pressed(vk_down)) {	
-		items_index += 1;
-		if(items_index >= owned_items_size) {
-			items_index = 0;
-		}
-	} 	
+// ----- Move character
+if(keyboard_check(vk_right)) {
+	direction = 0;
 }
+if(keyboard_check(vk_up)) {	
+	direction = 90;	
+}
+if(keyboard_check(vk_left)) {	
+	direction = 180;	
+}
+if(keyboard_check(vk_down)) {	
+	direction = 270;	
+}	
+if( keyboard_check(vk_right) || keyboard_check(vk_up) || keyboard_check(vk_left) || keyboard_check(vk_down)) {
+	speed = 1.5;
+	image_speed = 1;
+}	
 
 // -- Toggle inventory menu
 if(keyboard_check_pressed(vk_shift)) {	
-	show_inventory = !show_inventory;
-	items_index = 0;
+	// ----- Move Inventory cursor	
+	var owned_items_size = array_length_1d(owned_items_array);
+	items_index += 1;
+	if(items_index >= owned_items_size) {
+		items_index = 0;
+	}	
 }
 
 // -- Give item to an npc
