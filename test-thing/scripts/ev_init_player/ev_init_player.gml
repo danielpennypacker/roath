@@ -1,4 +1,6 @@
-/// @desc Initalize
+// -- This sets up most of the global vars in the game.
+
+
 globalvar player;
 player = self;
 // Sprites for the player

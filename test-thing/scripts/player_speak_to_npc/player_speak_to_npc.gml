@@ -1,3 +1,5 @@
+// handle the player advancing the NPC's speech. 
+
 var npc = argument0;
 
 if(npc) {
@@ -6,10 +8,10 @@ if(npc) {
 		// if the item has been given, reset back to the current speech list.		
 		npc.speech_index = -1;
 		npc.giving_item = false;
-	}
-	
+	}	
 	var speech_list = npc_get_speech(npc);
-	
+
+	// If the player has reached the end of the current line of speech.
 	if(npc.speech_index == array_length_1d(speech_list) - 1){
 		
 		// -- Player has seen first lines of NPC's speech, they are
@@ -27,7 +29,7 @@ if(npc) {
 			npc.speech_index = 0;				
 		}				
 	} else {			
-		// -- Advance the speech to the next index.
+		// -- Advance the speech to the next item as normal.
 		npc.speech_index += 1;			
 	}
 }

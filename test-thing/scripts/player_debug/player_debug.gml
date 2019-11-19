@@ -1,3 +1,5 @@
+// This can draw info around the player if needed. 
+
 var x_range = 10;
 var y_range = 3;
 

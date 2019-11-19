@@ -1,3 +1,5 @@
+// This draws the inventory box on the right side of the screen
+
 var base_width = 300;	
 var box_height = 645;
 var text_padding = 10;

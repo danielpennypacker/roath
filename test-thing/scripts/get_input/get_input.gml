@@ -1,3 +1,4 @@
+// All of the key board inputs are handled in this file. 
 
 speed = 0;
 image_speed = 0;
@@ -21,9 +22,8 @@ if( keyboard_check(vk_right) || keyboard_check(vk_up) || keyboard_check(vk_left)
 	image_speed = 1;
 }	
 
-// -- Toggle inventory menu
-if(keyboard_check_pressed(vk_shift)) {	
-	// ----- Move Inventory cursor	
+// ----- Move Inventory cursor	
+if(keyboard_check_pressed(vk_shift)) {		
 	var owned_items_size = array_length_1d(owned_items_array);
 	items_index += 1;
 	if(items_index >= owned_items_size) {
@@ -31,17 +31,16 @@ if(keyboard_check_pressed(vk_shift)) {
 	}	
 }
 
-// -- Give item to an npc
+
 if(keyboard_check_pressed(vk_enter)) {
 	if(speaker_is_npc()){
+		// -- Give item to an npc
 		player_give_item_to_npc(speaker);	
 	}
-	// show_debug_message("-- get_input:3:speaker");
-	// show_debug_message(speaker);
-	var is_findable = speaker_is_findable();
 
-	// show_debug_message("-- get_input:3:is_findable");
-	// show_debug_message(is_findable);
+	// If player is standing next to a findable item, 
+	// enter is used to pick the item up.
+	var is_findable = speaker_is_findable();
 	if(is_findable){	
 		show_debug_message(speaker);		
 		player_take_findable(speaker);		

@@ -1,9 +1,11 @@
-var findable = argument0;
+// A player is picking up an item.
 
-show_debug_message("-- player_take_item:findable");
-show_debug_message(findable);
+var findable = argument0;
 if(findable.item != NULL_ITEM) {
+	// update the player
 	speaker = false;
 	items_map[? findable.item] = true;
+	
+	// remove the findable.
 	instance_destroy(findable);	
 }
