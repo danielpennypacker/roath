@@ -63,6 +63,41 @@ OLD_NOTE = "Old_Note";
 items_map[? OLD_NOTE] = false;
 items_descriptions[? OLD_NOTE] = "An old note that reads: Dear Tristan, there's I know you'll never staywhen the Osterogi get here, but I will, and you can always come back to me."
 
+globalvar FORIEGN_AMULET;
+FORIEGN_AMULET = "Foriegn_Amulet";
+items_map[? FORIEGN_AMULET] = false;
+items_descriptions[? FORIEGN_AMULET] = "A decorative amulet from who knows where."
+
+globalvar CONVOY_BAND;
+CONVOY_BAND = "Convoy_Band";
+items_map[? CONVOY_BAND] = false;
+items_descriptions[? CONVOY_BAND] = "A bracelet worn by an Officer of the Convoy."
+
+globalvar SCRIP_TOKEN;
+SCRIP_TOKEN = "Scrip_Token";
+items_map[? SCRIP_TOKEN] = false;
+items_descriptions[? SCRIP_TOKEN] = "A local token for labor exchange."
+
+globalvar GAMEHOUSE_CHIPS;
+GAMEHOUSE_CHIPS = "Gamehouse_chips";
+items_map[? GAMEHOUSE_CHIPS] = false;
+items_descriptions[? GAMEHOUSE_CHIPS] = "Chips used at the local gambling house."
+
+globalvar NOTICE_OF_PROPERTY;
+NOTICE_OF_PROPERTY = "Notice_of_Property_Sale";
+items_map[? NOTICE_OF_PROPERTY] = false;
+items_descriptions[? NOTICE_OF_PROPERTY] = "A flier for a local property for sale."
+
+globalvar SIZEABLE_WINNINGS;
+SIZEABLE_WINNINGS = "Sizeable_Winnings";
+items_map[? SIZEABLE_WINNINGS] = false;
+items_descriptions[? SIZEABLE_WINNINGS] = "Winnings from the local game house."
+
+globalvar BURLESQUE_FLIER;
+BURLESQUE_FLIER = "Burlesque_Flier";
+items_map[? BURLESQUE_FLIER] = false;
+items_descriptions[? BURLESQUE_FLIER] = "A flier for a show in the pleasure district."
+
 
 // -- The current selected item in the inventory
 globalvar items_index;
