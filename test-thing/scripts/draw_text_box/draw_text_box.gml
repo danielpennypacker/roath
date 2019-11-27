@@ -29,7 +29,15 @@ if (speaker) {
 			draw_set_color(c_green);
 			speech_desc = "Accepted " + pretty_item_name(speaker.current_speech_key) + " - " + speech_desc;
 		}			
-		current_title = speaker.role + " - " + speech_desc + " - Space to advance" ;			
+		var speech_count = array_length_1d(speech_list);
+		current_title = speaker.role 
+			+ " - " 
+			+ speech_desc 
+			+ " " 
+			+ string(speaker.speech_index + 1) 
+			+ "/" 
+			+ string(speech_count) ;			
+			
 		current_text = speech_list[speaker.speech_index];
 	}			
 	if(speaker_is_sign()) {		

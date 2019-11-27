@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "14e6df3d-2120-4658-a578-402523454241",
+            "Value": {
+                "id": "e97018eb-405c-489f-9d69-a7b4b1f60ec9",
+                "resourcePath": "sprites\/spr_bookie_down\/spr_bookie_down.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "153dd607-73ae-47de-800e-4b21c8a1f2d7",
             "Value": {
                 "id": "802b3673-a60f-44ae-b1ea-0d91a8d905b2",
@@ -404,6 +412,14 @@
                 "id": "26adeb5a-f7bb-438f-8241-34c0d68c430e",
                 "resourcePath": "fonts\/fnt_small\/fnt_small.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "43a135c5-cf23-4002-837d-474604d73121",
+            "Value": {
+                "id": "8a1b6d7d-7279-4358-90a2-9598cfd22296",
+                "resourcePath": "sprites\/spr_bookie_up\/spr_bookie_up.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -783,6 +799,14 @@
             }
         },
         {
+            "Key": "7e7c5c15-cee0-4b52-b0f7-2fd198c0e5bf",
+            "Value": {
+                "id": "1157dac7-7c0f-45b3-9c09-e8dd50722901",
+                "resourcePath": "sprites\/spr_bookie_right\/spr_bookie_right.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7eb42c89-e1f2-43ed-a70b-b016481a888e",
             "Value": {
                 "id": "4e9adb35-0f51-498e-a30c-4907ebdea8bb",
@@ -884,6 +908,14 @@
                 "id": "0c37b193-6e04-4a35-8d55-354182a08b5e",
                 "resourcePath": "sprites\/spr_warp\/spr_warp.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "913ee773-94d0-49ce-b3d2-4583c176a706",
+            "Value": {
+                "id": "3ebbbc52-826f-47bd-87b8-b35ed48af51e",
+                "resourcePath": "scripts\/init_npc_bookie\/init_npc_bookie.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -995,6 +1027,14 @@
             "Value": {
                 "id": "69fcaf72-31c0-4237-8f07-14d900dcbe6c",
                 "resourcePath": "views\/7a60555c-ec8d-485f-bcf3-0a59bc4beb91-room.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a43d7d63-be4e-4845-aafa-c3ed67796b56",
+            "Value": {
+                "id": "77dda1ad-ba2f-4e71-a813-d8755f91decb",
+                "resourcePath": "views\/a43d7d63-be4e-4845-aafa-c3ed67796b56.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -1527,11 +1567,27 @@
             }
         },
         {
+            "Key": "e68f79e9-b442-420a-8d34-d943f43d04fb",
+            "Value": {
+                "id": "bb172bab-1494-4d4d-80e6-90ba69358e76",
+                "resourcePath": "sprites\/spr_bookie_left\/spr_bookie_left.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e70484cb-8144-4006-9c8c-f1a2c6ab7316",
             "Value": {
                 "id": "701bdbe8-eb28-42ca-b46f-742a9311135e",
                 "resourcePath": "scripts\/draw_text_box\/draw_text_box.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "e880098c-069a-47ea-9355-1032c1f1ad47",
+            "Value": {
+                "id": "6633e506-9103-4ac3-b7e2-15be00650520",
+                "resourcePath": "objects\/obj_bookie\/obj_bookie.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1556,6 +1612,14 @@
                 "id": "3e11bcf9-b6d2-4c22-8198-02074cbc1d47",
                 "resourcePath": "sprites\/thought_bubble_blue\/thought_bubble_blue.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "eaba6eb2-5ded-444e-9006-2f64a1a545ee",
+            "Value": {
+                "id": "c3852179-b524-4415-9bfd-d71ba9c54d85",
+                "resourcePath": "scripts\/draw_timer\/draw_timer.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1661,6 +1725,7 @@
         "739b2dcd-0633-491c-9da4-8b5c16d25c4b",
         "13707f94-78d3-4b0b-8956-f28b5bbc116e",
         "e70484cb-8144-4006-9c8c-f1a2c6ab7316",
+        "eaba6eb2-5ded-444e-9006-2f64a1a545ee",
         "440b6582-6f37-4f4f-ae62-64bfdfbd40db",
         "bf3c4f5e-0e0c-4202-9ab1-dce6175b05b7",
         "f71501d8-194c-4725-9bb2-a1667eaa8190",
@@ -1688,6 +1753,7 @@
         "80c77451-4d47-4522-b7d3-3157fafd3024",
         "5592a426-8569-424f-bf81-5d98f8cfc00b",
         "6de017ad-d7f1-4104-8194-e1f95e66087a",
+        "913ee773-94d0-49ce-b3d2-4583c176a706",
         "ba9db3bb-5599-4dac-9452-2a4dfdc84920",
         "a6872f1f-39e6-4a3a-a649-b2ce7a0f0142",
         "5c7d98e5-0291-4f68-881e-3df4471608b0",

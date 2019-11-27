@@ -12,7 +12,8 @@
         "a96c2772-8213-4fe5-a9ec-e40f58c10b76",
         "80c77451-4d47-4522-b7d3-3157fafd3024",
         "5592a426-8569-424f-bf81-5d98f8cfc00b",
-        "6de017ad-d7f1-4104-8194-e1f95e66087a"
+        "6de017ad-d7f1-4104-8194-e1f95e66087a",
+        "913ee773-94d0-49ce-b3d2-4583c176a706"
     ],
     "filterType": "GMScript",
     "folderName": "init_npcs",
