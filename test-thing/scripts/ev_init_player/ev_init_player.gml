@@ -1,6 +1,27 @@
 // -- This sets up most of the global vars in the game.
 
+// The room viewport is still set in the Room editor, 
+// but these are defined here to make drawing the UI easier
 
+// use these when I'm a little smarter at GM
+// room_get_camera()
+// camera_get_view_width(rm_gr)
+globalvar VIEW_WIDTH;
+VIEW_WIDTH = 640;
+globalvar VIEW_HEIGHT;
+VIEW_HEIGHT = 400;
+globalvar TEXT_BOX_HEIGHT;
+TEXT_BOX_HEIGHT = 200;
+globalvar GAME_WIDTH;
+GAME_WIDTH = 950;
+
+globalvar timer;
+timer = 0;
+
+globalvar MAX_GAME_TIME;
+MAX_GAME_TIME = (60 * 60 * 2);
+
+globalvar player;
 globalvar player;
 player = self;
 // Sprites for the player
@@ -12,9 +33,6 @@ spr_left = spr_player_left;
 // Global vars
 globalvar speaker;
 speaker = false;
-
-globalvar timer;
-timer = 0;
 
 // -- SPEECH KEYS
 globalvar NULL_ITEM;

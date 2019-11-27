@@ -6,4 +6,6 @@ if (!instance_exists(obj_fade)) {
 	get_input();
 	set_sprite_face();
 	check_speaker();
+	
+	check_for_game_end();
 }

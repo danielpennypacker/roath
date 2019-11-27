@@ -1,9 +1,9 @@
 // - Draws the text box at the bottom of the screen. 
 // Also handles signs and findable objects.
 
-var base_width = 640;
+var base_width = VIEW_WIDTH;
 var base_height = 655;		
-var box_height = 200;
+var box_height = TEXT_BOX_HEIGHT;
 var text_padding = 20;
 var line_height =  35;		
 	
