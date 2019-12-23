@@ -8,4 +8,8 @@ var no_item_taken = [
 ,"No one really know's what's gonna happen. Everyone's been in a crazy mood, sharing their life stories scrambling to take what they can. At least this is a good time to talk to people!"
 ];
 
+self.speech_map[? EPILOGUE + NO_TAKEN_ITEM] = [
+	"Dock Worker -- fil out"
+];
+
 return no_item_taken;

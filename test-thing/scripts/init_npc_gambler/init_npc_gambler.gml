@@ -9,6 +9,9 @@ var no_item_taken = [
 , "I'll tempt fate again a'fore long."
 ,"For now I am BASKING in my own radiant divinity, which you may observe."
 ];
+self.speech_map[? EPILOGUE + NO_TAKEN_ITEM] = [
+	"Dock Worker -- fil out"
+];
 
 self.speech_map[? COINS] = [
 "Oh, you come against the God of Gambling with a handful of gold? How sweet to hear my language spoken!"

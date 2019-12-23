@@ -8,6 +8,9 @@ var no_item_taken = [
 , "I've learned in my travels that when a man hands me coin, such a spirit overtakes me that I can think of endless games to play."
 ,"When it suits you, consider a revision of diversions and join me for a game. I can't promise I'll stay in Roath forever, of course..."
 ];
+self.speech_map[? EPILOGUE + NO_TAKEN_ITEM] = [
+	"Dock Worker -- fil out"
+];
 
 self.speech_map[? COINS] = [
 "He comes to play! And with quite an observed handful - no need to be bashful."

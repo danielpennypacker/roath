@@ -6,6 +6,9 @@ var no_item_taken = [
 ,"I’ll be leaving soon, and I’ve traded seals with most of my friends. I’m sure we’ll stay in touch back in Bosk."
 , "We’re putting together just one more meal before we all leave, I’m just missing the Paluk Spice that you’re supposed to use for them. It’s been so crazy with everyone preparing for the invasion that there’s been all kinds of shortages. It’s salty and sweet. "
 ];
+self.speech_map[? EPILOGUE + NO_TAKEN_ITEM] = [
+	"Dock Worker -- fil out"
+];
 
 self.giving_map[? SPICES] = FAMILY_SEAL;
 self.speech_map[? SPICES] = [
@@ -17,5 +20,7 @@ self.speech_map[? SPICES] = [
 self.speech_map[? GIVING_ITEM + SPICES] = [
 "Here take this seal. Next time you're in Bosk you can use it to get past the front gate of my family's estate."
 ]
+
+
 
 return no_item_taken;

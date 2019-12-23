@@ -7,6 +7,9 @@ var no_item_taken = [
 , "Sure one of the rich merchants will sponsor the occasional party, and sure, I’ll join the drinking then. But when was the last time any of them gave me a sip of their imported wines at the end of the work week."
 , "They’ve got so much, but I’m stuck here begging for pennies so that I can have a little comfort with the cheapest wine there is. No one cares about me anyways, and I don’t care what happens here."
 ];
+self.speech_map[? EPILOGUE + NO_TAKEN_ITEM] = [
+	"Dock Worker -- fil out"
+];
 
 self.speech_map[? BOAT_TICKET] = [
 "Thank you so much! No one’s ever given me something like this, you’re being kinder to me than my own mother!"

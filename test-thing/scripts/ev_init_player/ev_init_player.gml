@@ -1,11 +1,12 @@
 // -- This sets up most of the global vars in the game.
 
-// The room viewport is still set in the Room editor, 
-// but these are defined here to make drawing the UI easier
-
+// -- Add viewport code here. 
 // use these when I'm a little smarter at GM
 // room_get_camera()
 // camera_get_view_width(rm_gr)
+
+// The room viewport is still set in the Room editor, 
+// but these are defined here to make drawing the UI easier
 globalvar VIEW_WIDTH;
 VIEW_WIDTH = 640;
 globalvar VIEW_HEIGHT;
@@ -15,11 +16,16 @@ TEXT_BOX_HEIGHT = 200;
 globalvar GAME_WIDTH;
 GAME_WIDTH = 950;
 
+// Timing and game end
+globalvar fadeout_complete;
+fadeout_complete = false;
 globalvar timer;
 timer = 0;
+globalvar ending_index;
+ending_index = 0;
 
 globalvar MAX_GAME_TIME;
-MAX_GAME_TIME = (60 * 60 * 2);
+MAX_GAME_TIME = (60 * 60 * 10);
 
 globalvar player;
 globalvar player;
@@ -41,7 +47,8 @@ globalvar NO_TAKEN_ITEM;
 NO_TAKEN_ITEM = "no_taken_item";
 globalvar GIVING_ITEM;
 GIVING_ITEM = "giving_item";
-
+globalvar EPILOGUE;
+EPILOGUE = "EPILOGUE"
 
 //----- ITEMS
 

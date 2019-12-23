@@ -17,11 +17,15 @@ draw_rectangle(
 	false
 );		
 
+// vars for remember where to draw the help text box
+var should_draw_help = false;
+var help_y = 0;
+
 var default_color = c_black;
 draw_set_font(fnt_small);
 draw_set_color(default_color);	
 		
-var inventory_text = "Inventory - Shift to select";
+var inventory_text = "Inventory";
 draw_text_ext(
 	starting_x + text_padding, 
 	starting_y + text_padding, 
@@ -29,7 +33,17 @@ draw_text_ext(
 	line_height, 
 	base_width - text_padding
 );		
+
 var items_size = array_length_1d(owned_items_array);
+
+if(items_size > 1) {
+	draw_help_text_box(
+		starting_x + text_padding + 100, 
+		starting_y + text_padding, 
+		"Shift to Select",
+	)
+}
+
 for(var i = 0; i < items_size; i++) { 
 	var item = owned_items_array[i];						
 	var line_text = pretty_item_name(item);		
@@ -39,35 +53,56 @@ for(var i = 0; i < items_size; i++) {
 	} else {
 		line_text = "  " + line_text;
 	}		
-	// set the color if the speaker will take it. 
-	if(speaker and speaker_is_npc()) {		
+	
+	// calculate if the NPC will accept the current item.
+	var npc_wants_item = false;
+		
+	// set the color of the text. 
+	if(speaker and speaker_is_npc()) {				
+		npc_wants_item = (
+			ds_map_exists(speaker.speech_map, item) 
+			&& speaker.has_introduced
+			&& !speaker.giving_item
+		)
+		
 		// speaker is giving the player the current item
 		// listed in the inventory
 		if( speaker.giving_item 
 			&& (item == npc_get_item_to_give(speaker))
 		) {
 			draw_set_color(c_orange);	
-		} else if(ds_map_exists(speaker.speech_map, item) 
-			&& speaker.has_introduced
-			&& !speaker.giving_item
-		) {			
-			draw_set_color(c_blue);	
-			if(items_index == i) {
-				line_text = line_text + " - Enter to give"
-			}			
+		} else if(npc_wants_item) {			
+			draw_set_color(c_blue);				
 		} else {
 			draw_set_color(default_color);	
 		}			
 	}	
+	
+	// draw the actual line of text
 	line_text = line_text + "\n";
+	var line_y = starting_y + 20 + text_padding + ( (  1 + i ) * line_height )
+	var line_x = starting_x + text_padding;
 	draw_text_ext(
-		starting_x + text_padding, 
-		starting_y + 20 + text_padding + ( (  1 + i ) * line_height ), 
+		line_x, line_y, 
 		line_text,
 		line_height, 
 		base_width - text_padding
-	);							
+	);		
+	
+	// help text
+	if(items_index == i && npc_wants_item) {		
+		should_draw_help = true;
+		help_y = line_y		
+	}				
 }		
+
+// -- Draw the help text. Has to come last so it's on top of other
+// text
+if(should_draw_help){
+	draw_help_text_box(line_x, help_y + line_height - 10,
+		"Return to Give"
+	)
+}	
 
 // --- Display the items description
 if(items_size > 0){
@@ -81,8 +116,4 @@ if(items_size > 0){
 		line_height, 
 		base_width - text_padding
 	);		
-
 }
-
-
-

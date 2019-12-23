@@ -6,6 +6,9 @@ var no_item_taken = [
 , "Thing 3"
 ,"thing 4"
 ];
+self.speech_map[? EPILOGUE + NO_TAKEN_ITEM] = [
+	"Dock Worker -- fil out"
+];
 
 
 return no_item_taken

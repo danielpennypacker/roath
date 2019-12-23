@@ -8,6 +8,10 @@ var no_item_taken = [
 ,"I tried to go to the Convoy Council to try and get them to intervene, so send the navy, help evacuate, anything. But it all fell on def ears. I’ve heard those selfish bastards talk endlessly about the vacations they’ve had here, but once there’s a real threat, they’re nowhere to be seen."
 ,"Maybe this war has been brewing for too long, I know of colleagues sailing to other nations right now, just waiting to hear about the sack of Roath. Once everyone sees how the Osterogi treat an undefended city, they’ll probably come begging to the Convoy for help."
 ];
+self.speech_map[? EPILOGUE + NO_TAKEN_ITEM] = [
+	"Dock Worker -- fil out"
+];
+
 self.speech_map[? GIVING_ITEM + NO_TAKEN_ITEM] = [
 "Giving Boat Ticket: Here, take this ticket to Bosk. I’m leaving soon. I’m sure you can find someone who deserves it."
 ];

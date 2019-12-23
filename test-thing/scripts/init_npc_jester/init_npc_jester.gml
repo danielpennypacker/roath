@@ -6,4 +6,8 @@ var no_item_taken = [
 , "I’m not that worried about the Osterogi coming. Once they get here, they’ll see how good it is, and they won’t want to change it. I’m very connected to the markets, and do you really think the Osterogi are dumb enough to scare off all the talent we’ve got here? "
 ,"I was just talking to one of the local gangs about how we can work with them when they get here. If we want to keep any part of our culture, we’ll have to adapt. Adapting is the true culture of Roath!"
 ];
+self.speech_map[? EPILOGUE + NO_TAKEN_ITEM] = [
+	"Dock Worker -- fil out"
+];
+
 return no_item_taken

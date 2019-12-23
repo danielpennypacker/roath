@@ -1,4 +1,5 @@
-/// @desc set an object's sprites based on the name given.
+// -- TODO - write tests at startup to make sure NPC's have all their content filled out.
+
 state = "standing";
 destination = obj_warp;
 

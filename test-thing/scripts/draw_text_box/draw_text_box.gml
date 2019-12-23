@@ -74,3 +74,8 @@ draw_text_ext(
 	text_padding, base_height-box_height - text_padding, 
 	current_text ,line_height, base_width-text_padding
 );
+
+// draw the help text
+if (speaker && speaker_is_npc()) {
+	draw_help_text_box(base_width - 200, base_height - 50, "Space to advance")
+}	
