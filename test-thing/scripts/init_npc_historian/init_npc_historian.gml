@@ -17,7 +17,7 @@ self.speech_map[? GIVING_ITEM + NO_TAKEN_ITEM] = [
 "Here, just take this and sell it somewhere else, anywhere else! I'm sure some uptight nobel in Bosk would love it. And... thank you."
 ];
 self.speech_map[? EPILOGUE + NO_TAKEN_ITEM] = [
-	"Historian -- fil out"
+	"He was able to get two thirds of the Roath history books off the Island, but the rest were burned when the Osteragi arrived. He was exiled from Roath and died on a refugee ship."
 ];
 
 self.speech_map[? COINS] = [
@@ -26,7 +26,7 @@ self.speech_map[? COINS] = [
 , "Within 2 generations a powerful nation had arisen from seemingly nowhere."
 ];
 self.speech_map[? EPILOGUE + COINS] = [
-	"Historian  + COINS -- fil out"
+"He was able to gather enough books and money to open a library in a small trading port. Despite it's small size it's know as the best srouce of books on the history of Roath."
 ]
 
 return no_item_taken

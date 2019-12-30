@@ -7,7 +7,7 @@ var no_item_taken = [
 ,"I was just talking to one of the local gangs about how we can work with them when they get here. If we want to keep any part of our culture, we’ll have to adapt. Adapting is the true culture of Roath!"
 ];
 self.speech_map[? EPILOGUE + NO_TAKEN_ITEM] = [
-	"Dock Worker -- fil out"
+	"He worked with the Osterogi to help set up their new shipping system through Roath. As tourism declined he maintained his business, but never as much as before the invasion."
 ];
 
 return no_item_taken

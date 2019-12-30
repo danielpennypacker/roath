@@ -77,5 +77,9 @@ draw_text_ext(
 
 // draw the help text
 if (speaker && speaker_is_npc()) {
-	draw_help_text_box(base_width - 200, base_height - 50, "Space to advance")
+	draw_help_text_box(base_width - 200, base_height - 50, "Space")
+}	
+
+if (speaker && speaker_is_findable()) {
+	draw_help_text_box(base_width - 200, base_height - 50, "Enter")
 }	

@@ -8,7 +8,7 @@ var no_item_taken = [
 , "They’ve got so much, but I’m stuck here begging for pennies so that I can have a little comfort with the cheapest wine there is. No one cares about me anyways, and I don’t care what happens here."
 ];
 self.speech_map[? EPILOGUE + NO_TAKEN_ITEM] = [
-	"Dock Worker -- fil out"
+	"A week after the invasion he accidently threw up on an passing Osteragi Captain. He was pushed away, slipped, hit his head, and died."
 ];
 
 self.speech_map[? BOAT_TICKET] = [
@@ -19,6 +19,9 @@ self.speech_map[? BOAT_TICKET] = [
 ]
 self.speech_map[? GIVING_ITEM + BOAT_TICKET] = [
 "Here let me at least give you somthing. It’s some kind of spice, they fell off a cart yesterday and I uhm, kept them."
+];
+self.speech_map[? EPILOGUE + NO_TAKEN_ITEM] = [
+	"He escaped to Roath where he kept drinking until he died of old age."
 ];
 
 return no_item_taken;

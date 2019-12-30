@@ -1,5 +1,4 @@
 // This draws the inventory box on the right side of the screen
-
 var base_width = 300;	
 var box_height = 645;
 var text_padding = 10;
@@ -7,8 +6,10 @@ var line_height =  35;
 var starting_x = 660;
 var starting_y = 10;
 
+var HELP_X = 200;
+
 // background box of the inventory
-draw_set_color(c_white);			
+draw_set_color(c_white);
 draw_rectangle(
 	starting_x, 
 	starting_y, 
@@ -38,22 +39,16 @@ var items_size = array_length_1d(owned_items_array);
 
 if(items_size > 1) {
 	draw_help_text_box(
-		starting_x + text_padding + 100, 
+		starting_x + text_padding + HELP_X, 
 		starting_y + text_padding, 
-		"Shift to Select",
+		"Shift",
 	)
 }
 
 for(var i = 0; i < items_size; i++) { 
 	var item = owned_items_array[i];						
 	var line_text = pretty_item_name(item);		
-	// add a pointer arrow to the current item
-	if(items_index == i) {
-		line_text =  " - " + line_text; 
-	} else {
-		line_text = "  " + line_text;
-	}		
-	
+			
 	// calculate if the NPC will accept the current item.
 	var npc_wants_item = false;
 		
@@ -78,16 +73,32 @@ for(var i = 0; i < items_size; i++) {
 		}			
 	}	
 	
-	// draw the actual line of text
+	// Calc current line height.
 	line_text = line_text + "\n";
 	var line_y = starting_y + 20 + text_padding + ( (  1 + i ) * line_height )
 	var line_x = starting_x + text_padding;
+	
+	// Underline selected item/
+	if(items_index == i) {	
+		draw_set_color(c_ltgray);	
+		draw_rectangle(
+			line_x - 5, 
+			line_y - 5, 
+			line_x + 200, 
+			line_y + line_height - 5, 
+			true
+		);				
+	}
+	
+	// draw the inventory name.
+	draw_set_color(c_black);
 	draw_text_ext(
 		line_x, line_y, 
 		line_text,
 		line_height, 
 		base_width - text_padding
 	);		
+	
 	
 	// help text
 	if(items_index == i && npc_wants_item) {		
@@ -99,8 +110,8 @@ for(var i = 0; i < items_size; i++) {
 // -- Draw the help text. Has to come last so it's on top of other
 // text
 if(should_draw_help){
-	draw_help_text_box(line_x, help_y + line_height - 10,
-		"Return to Give"
+	draw_help_text_box(line_x + HELP_X, help_y,
+		"Return"
 	)
 }	
 

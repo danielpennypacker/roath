@@ -9,7 +9,7 @@ var no_item_taken = [
 ,"When it suits you, consider a revision of diversions and join me for a game. I can't promise I'll stay in Roath forever, of course..."
 ];
 self.speech_map[? EPILOGUE + NO_TAKEN_ITEM] = [
-	"Dock Worker -- fil out"
+	"She was exiled with many others and put on a refugee ship. She arrived in a small Convoy port and married a local carpenter."
 ];
 
 self.speech_map[? COINS] = [
@@ -18,6 +18,11 @@ self.speech_map[? COINS] = [
 , " And what a relief... I'm was bored of the typicality of today."
 , "Follow me, and let us become more acquainted with the rules of this particular game."
 ];
+self.speech_map[? EPILOGUE + NO_TAKEN_ITEM] = [
+	"She was exiled with many others and put on a refugee ship. She arrived in a small Convoy port and opened a brothel for visiting sailors."
+];
+
+
 
 self.speech_map[? FORIEGN_AMULET] = [
 "... you presume much to bring a foreigner such an unlikely trinket. Nevertheless, you presume correctly."
@@ -27,6 +32,10 @@ self.speech_map[? FORIEGN_AMULET] = [
 ];
 self.speech_map[? GIVING_ITEM + FORIEGN_AMULET] = [
 "As your reward, I have this spare that I suspect will be of use to you…"
+];
+
+self.speech_map[? EPILOGUE + NO_TAKEN_ITEM] = [
+	"She was exiled with many others and put on a refugee ship. She made her way to Bosk where she searched for who might be left of her family. She eventually found her cousin and helped her raise her children."
 ];
 self.giving_map[? FORIEGN_AMULET] = CONVOY_BAND;
 

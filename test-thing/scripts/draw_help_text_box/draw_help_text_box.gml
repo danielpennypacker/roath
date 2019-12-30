@@ -4,7 +4,7 @@ var x_start = argument0;
 var y_start = argument1;
 var text = argument2;
 
-var BOX_WIDTH = 250;
+var BOX_WIDTH = 75;
 var BOX_HEIGHT = 35;
 
 draw_set_color(c_ltgray);

@@ -10,7 +10,7 @@ var no_item_taken = [
 ,"For now I am BASKING in my own radiant divinity, which you may observe."
 ];
 self.speech_map[? EPILOGUE + NO_TAKEN_ITEM] = [
-	"Dock Worker -- fil out"
+"He managed to run an underground gambling house for Osterogi sailors."
 ];
 
 self.speech_map[? COINS] = [
@@ -22,6 +22,10 @@ self.speech_map[? COINS] = [
 self.speech_map[? GIVING_ITEM + COINS] = [
 "Return with such currency in hand and this God will not deny you!"
 ];
+self.speech_map[? EPILOGUE + COINS] = [
+"He managed to run an underground gambling house for Osterogi captains."
+];
+
 self.giving_map[? COINS] = COINS;
 
 self.speech_map[? FAMILY_SEAL] = [
@@ -30,10 +34,9 @@ self.speech_map[? FAMILY_SEAL] = [
 , "Suppose the first matter would be to buy a house much too big for myself."
 , " Aware of any plots, dear stranger?"
 ];
-self.speech_map[? GIVING_ITEM + FAMILY_SEAL] = [
-"I have no use for this, take it back!"
+self.speech_map[? EPILOGUE + FAMILY_SEAL] = [
+"He managed to run an underground gambling house for Osterogi generals."
 ];
-self.giving_map[? FAMILY_SEAL] = FAMILY_SEAL;
 
 self.speech_map[? SCRIP_TOKEN] = [
 "The working man comes to trade his labors for riches. A risk as old as the game itself."
@@ -44,7 +47,6 @@ self.speech_map[? SCRIP_TOKEN] = [
 self.speech_map[? GIVING_ITEM + SCRIP_TOKEN] = [
 "Take this writ and be off with you. Don't spend it all in once place!"
 ];
-self.giving_map[? SCRIP_TOKEN] = SIZEABLE_WINNINGS;
 
 self.speech_map[? GAMEHOUSE_CHIPS] = [
 "Ah, so you come bankrolled. So do I. Set down your wager, my friend."

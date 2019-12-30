@@ -9,7 +9,7 @@ var no_item_taken = [
 ];
 
 self.speech_map[? EPILOGUE + NO_TAKEN_ITEM] = [
-	"Dock Worker -- fil out"
+"He left on the last ship out of Roath and worked the rest of his life as a docker worker in Bosk."
 ];
 
 return no_item_taken;

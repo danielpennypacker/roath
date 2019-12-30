@@ -25,7 +25,7 @@ globalvar ending_index;
 ending_index = 0;
 
 globalvar MAX_GAME_TIME;
-MAX_GAME_TIME = (60 * 60 * 10);
+MAX_GAME_TIME = (60 * 60 * 2);
 
 globalvar player;
 globalvar player;

@@ -40,7 +40,7 @@ if (ending_index >= array_length_1d(NPC_LIST)) {
 	draw_set_color(c_white);
 	draw_text_ext(
 		20, SPRITE_HEIGHT + 50 + SPRITE_HEIGHT ,
-		speech_list[0]  ,10, 400
+		speech_list[0]  ,35, 400
 	);
 }
 
