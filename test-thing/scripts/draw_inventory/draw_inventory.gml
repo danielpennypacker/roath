@@ -48,6 +48,7 @@ if(items_size > 1) {
 for(var i = 0; i < items_size; i++) { 
 	var item = owned_items_array[i];						
 	var line_text = pretty_item_name(item);		
+	var current_text_color = default_color;
 			
 	// calculate if the NPC will accept the current item.
 	var npc_wants_item = false;
@@ -65,33 +66,19 @@ for(var i = 0; i < items_size; i++) {
 		if( speaker.giving_item 
 			&& (item == npc_get_item_to_give(speaker))
 		) {
-			draw_set_color(c_orange);	
+			current_text_color = c_orange;
 		} else if(npc_wants_item) {			
-			draw_set_color(c_blue);				
-		} else {
-			draw_set_color(default_color);	
-		}			
+			current_text_color = c_blue;
+		} 			
 	}	
 	
 	// Calc current line height.
 	line_text = line_text + "\n";
 	var line_y = starting_y + 20 + text_padding + ( (  1 + i ) * line_height )
 	var line_x = starting_x + text_padding;
-	
-	// Underline selected item/
-	if(items_index == i) {	
-		draw_set_color(c_ltgray);	
-		draw_rectangle(
-			line_x - 5, 
-			line_y - 5, 
-			line_x + 200, 
-			line_y + line_height - 5, 
-			true
-		);				
-	}
-	
+		
 	// draw the inventory name.
-	draw_set_color(c_black);
+	draw_set_color(current_text_color);	
 	draw_text_ext(
 		line_x, line_y, 
 		line_text,
@@ -99,7 +86,18 @@ for(var i = 0; i < items_size; i++) {
 		base_width - text_padding
 	);		
 	
-	
+	// Underline selected item/
+	if(items_index == i) {	
+		draw_set_color(c_ltgray);	
+		draw_rectangle(
+			line_x - 5, 
+			line_y, 
+			line_x + 200, 
+			line_y + line_height - 5, 
+			true
+		);				
+	}
+		
 	// help text
 	if(items_index == i && npc_wants_item) {		
 		should_draw_help = true;
