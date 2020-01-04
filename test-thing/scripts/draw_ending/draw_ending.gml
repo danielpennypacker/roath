@@ -39,8 +39,12 @@ if (ending_index >= array_length_1d(NPC_LIST)) {
 	var speech_list = npc_get_speech(npc);
 	draw_set_color(c_white);
 	draw_text_ext(
-		20, SPRITE_HEIGHT + 50 + SPRITE_HEIGHT ,
+		20, SPRITE_HEIGHT + 50 + SPRITE_HEIGHT,
 		speech_list[0]  ,35, 400
 	);
+	
+	draw_help_text_box(
+		430, SPRITE_HEIGHT + 50 + SPRITE_HEIGHT, "Space"
+	)
 }
 

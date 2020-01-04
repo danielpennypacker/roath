@@ -1,4 +1,7 @@
-// a contextual text box
+/// @desc For drawing control hints
+/// @param x_start
+/// @param y_start
+/// @param text
 
 var x_start = argument0;
 var y_start = argument1;
