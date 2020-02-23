@@ -1,4 +1,3 @@
-timer = timer +1;
 depth = -y
 
 if (!instance_exists(obj_fade)) {	
@@ -8,6 +7,9 @@ if (!instance_exists(obj_fade)) {
 	check_speaker();	
 	check_for_game_end();
 } else {
-
 	get_ending_input();
+}
+
+if(!speaker) {
+	timer = timer +1;
 }

@@ -31,7 +31,7 @@ if(npc.giving_item) {
 }
 
 if( speaker == npc) {	
-	draw_sprite(speech_sprite, npc.speech_index, x, y - 20)
+	draw_sprite(speech_sprite, 0, x, y - 20)
 } else if(thought_sprite) {	
 	draw_sprite(thought_sprite, 0, x, y - 20)
 }

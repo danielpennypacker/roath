@@ -1,6 +1,5 @@
 
 var padding = 30;
-var width = VIEW_WIDTH;	
 var base_height = VIEW_HEIGHT + TEXT_BOX_HEIGHT + 50;
 var line_width = 5;
 
@@ -17,7 +16,12 @@ if (timer/MAX_GAME_TIME >= 1) {
 }
 
 
-draw_set_color(c_yellow);
+if (speaker) {
+	draw_set_color(c_gray);
+} else {
+	draw_set_color(c_yellow);
+}
+
 draw_circle(
 	padding + (precent_time_passed * GAME_WIDTH),
 	base_height + padding + 5,
