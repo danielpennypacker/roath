@@ -1,22 +1,21 @@
+if (! speaker) {return;}
+
+
 // This draws the inventory box on the right side of the screen
 var base_width = 300;	
-var box_height = 645;
+var box_height = TEXT_BOX_HEIGHT;
 var text_padding = 10;
 var line_height =  35;	
+
 var starting_x = 660;
-var starting_y = 10;
+var starting_y = TEXT_BOX_START- TEXT_BOX_HEIGHT;
+
+var text_padding = 20;
+var line_height =  35;
+
 
 var HELP_X = 200;
 
-// background box of the inventory
-draw_set_color(c_white);
-draw_rectangle(
-	starting_x, 
-	starting_y, 
-	starting_x + base_width, 
-	starting_y + box_height, 
-	false
-);		
 
 // vars for remember where to draw the help text box
 var should_draw_help = false;
@@ -26,21 +25,33 @@ var default_color = c_black;
 draw_set_font(fnt_small);
 draw_set_color(default_color);	
 		
-var inventory_text = "Inventory";
-draw_text_ext(
-	starting_x + text_padding, 
-	starting_y + text_padding, 
-	inventory_text,
-	line_height, 
-	base_width - text_padding
-);		
-
 var items_size = array_length_1d(owned_items_array);
 
-if(items_size > 1) {
+// Title Box of the inventory
+draw_set_color(c_gray);
+draw_rectangle(starting_x, TEXT_BOX_START-(box_height + line_height), 
+				starting_x + base_width, starting_y + box_height, false);
+draw_set_color(c_white);
+draw_text_ext(
+	starting_x + text_padding, TEXT_BOX_START-box_height - line_height + 5 ,
+	"Inventory" ,line_height, base_width-text_padding
+);
+draw_set_color(c_white);
+
+// background box of the inventory
+draw_rectangle(
+	starting_x, 
+	starting_y, 
+	starting_x + base_width, 
+	starting_y + box_height, 
+	false
+);		
+
+// Instructions for "shift" to cycle
+if (items_size > 1) {
 	draw_help_text_box(
-		starting_x + text_padding + HELP_X, 
-		starting_y + text_padding, 
+		starting_x + base_width - 75, 
+		starting_y + box_height - line_height, 
 		"Shift",
 	)
 }
@@ -72,9 +83,8 @@ for(var i = 0; i < items_size; i++) {
 		} 			
 	}	
 	
-	// Calc current line height.
-	line_text = line_text + "\n";
-	var line_y = starting_y + 20 + text_padding + ( (  1 + i ) * line_height )
+	// Calc current line height.	
+	var line_y = starting_y + ( i * line_height ) + text_padding
 	var line_x = starting_x + text_padding;
 		
 	// draw the inventory name.
@@ -113,16 +123,3 @@ if(should_draw_help){
 	)
 }	
 
-// --- Display the items description
-if(items_size > 0){
-	var current_item = owned_items_array[items_index]; 			
-	var current_text = items_descriptions[? current_item];
-	draw_set_color(c_dkgray);	
-	draw_text_ext(
-		starting_x + text_padding, 
-		starting_y + text_padding + 450, 
-		current_text,
-		line_height, 
-		base_width - text_padding
-	);		
-}

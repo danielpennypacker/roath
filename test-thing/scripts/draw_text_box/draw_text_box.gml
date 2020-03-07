@@ -1,11 +1,9 @@
 // - Draws the text box at the bottom of the screen. 
 // Also handles signs and findable objects.
-if (!speaker) {
-	return;
-}	
+if (!speaker) { return; }	
 
 var base_width = VIEW_WIDTH;
-var base_height = 655;		
+var base_height = TEXT_BOX_START;		
 var box_height = TEXT_BOX_HEIGHT;
 var text_padding = 20;
 var line_height =  35;
@@ -58,6 +56,7 @@ draw_text_ext(
 );
 draw_set_color(c_white);
 current_text = "\n" + current_text;
+
 //text box - Text is in var "current_text".		
 draw_rectangle(0, base_height-box_height, base_width, base_height, false);			
 draw_set_color(c_black);	
@@ -67,10 +66,9 @@ draw_text_ext(
 );
 
 // draw the help text
-if (speaker && speaker_is_npc()) {
-	draw_help_text_box(base_width - 200, base_height - 50, "Space")
+if (speaker_is_npc()) {
+	draw_help_text_box(base_width - 75, base_height - line_height, "Space")
 }	
-
-if (speaker && speaker_is_findable()) {
-	draw_help_text_box(base_width - 200, base_height - 50, "Enter")
+if (speaker_is_findable()) {
+	draw_help_text_box(base_width - 75, base_height - line_height, "Enter")
 }	
