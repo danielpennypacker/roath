@@ -7,10 +7,10 @@ self.giving_map[? NO_TAKEN_ITEM] = HISTORY_BOOK;
 // self.giving_map[? COINS] = SILVER_FORK;
 
 var no_item_taken = [
-"I’m an archivist at one of the local universities. " 
-, "I’ve spent my whole life preserving knowledge."
-, "You're from where? Well anyways, don't worry, just listen and I'll give you a book. Men have died trying to steal these, but now these idiots just want bread and water for the journey out of here."
-, "Really, what's one life for all this knowledge. I've dedicated my whole life to preserving these books, and I'm sure the Osterogs will burn anything that says they haven't owned Roath since the beginning of time."
+"I’m an archivist at one of the local universities." 
+, "I’m trying to get as many books out of here as I can."
+, "I’m sure once the Osterogi get here will burn anything that says they haven’t owned Roath Forever."
+, "Some of these books contain generations of knowledge. We can’t dishonor our ancestors' struggles by just forgetting them."
 ];
 
 self.speech_map[? GIVING_ITEM + NO_TAKEN_ITEM] = [

@@ -15,18 +15,12 @@ self.speech_map[? EPILOGUE + NO_TAKEN_ITEM] = [
 
 self.speech_map[? COINS] = [
 "Oh, you come against the God of Gambling with a handful of gold? How sweet to hear my language spoken!"
-, "But I only gamble on credit, you see. Not wise for my health to carry winnings, and I've sufficient trust of the house."
-, "We play in scrip or chips, or not at all."
-, "You really must be new here."
-];
-self.speech_map[? GIVING_ITEM + COINS] = [
-"Return with such currency in hand and this God will not deny you!"
+, "I appreciate the favor, and I suppose it’s a gamble how this favor will return to you? "
 ];
 self.speech_map[? EPILOGUE + COINS] = [
 "He managed to run an underground gambling house for Osterogi captains."
 ];
 
-self.giving_map[? COINS] = COINS;
 
 self.speech_map[? FAMILY_SEAL] = [
 "Oh, indeed, a family seal. I wouldn't know it from the face of a coin, but it's dignified. Very dignified."
@@ -36,23 +30,6 @@ self.speech_map[? FAMILY_SEAL] = [
 ];
 self.speech_map[? EPILOGUE + FAMILY_SEAL] = [
 "He managed to run an underground gambling house for Osterogi generals."
-];
-
-self.speech_map[? SCRIP_TOKEN] = [
-"The working man comes to trade his labors for riches. A risk as old as the game itself."
-, "Very well, I have my sum against yours. We shall bet... one roll of the dice!"
-, "Here we go!"
-, "... Impossible. But it happened all the same! Well done. You've earned no meager share of this God's bounty."
-];
-self.speech_map[? GIVING_ITEM + SCRIP_TOKEN] = [
-"Take this writ and be off with you. Don't spend it all in once place!"
-];
-
-self.speech_map[? GAMEHOUSE_CHIPS] = [
-"Ah, so you come bankrolled. So do I. Set down your wager, my friend."
-, "I should thank you for another opportunity to demonstrate my godhood. One roll of the dice!"
-, "Here we go!"
-, "A shame, friend. However, I did warn you I was a God. Silly to challenge me bearing that detail in mind."
 ];
 
 self.speech_map[? NOTICE_OF_PROPERTY] = [
@@ -65,10 +42,11 @@ self.speech_map[? NOTICE_OF_PROPERTY] = [
 self.speech_map[? GIVING_ITEM + NOTICE_OF_PROPERTY] = [
 "For inspiring me, I'll give you a gift!"
 ];
+self.speech_map[? EPILOGUE + NOTICE_OF_PROPERTY] = [
+"He managed to run an underground gambling house for Osterogi generals."
+];
+
 self.giving_map[? NOTICE_OF_PROPERTY] = FORIEGN_AMULET;
-
-
-
 
 
 return no_item_taken
